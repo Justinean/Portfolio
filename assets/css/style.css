@@ -149,21 +149,25 @@ main h1 {
 #op1 {
     position: relative; 
     top: -75px;
+    height: fit-content;
 }
 
 #op2 {
     position: relative; 
     top: -75px;
+    height: fit-content;
 }
 
 #op3 {
     position: relative; 
     top: -360px;
+    height: fit-content;
 }
 
 #op4 {
     position: relative; 
     top: -360px;
+    height: fit-content;
 }
 
 #otherProjects figure h2 {
