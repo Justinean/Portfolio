@@ -12,19 +12,29 @@ h2 {
 }
 
 body {
-    background-color: #1caf2362;
+    height: fit-content;
+    background-color: #f7e9ff0c;
 }
 
 header {
-    display: flex;
     width: 100%;
-    height: 200%;
-    background-color: rgb(65, 64, 64);
+    height: 60px;
+    background-color: #050507c4;
     color: white;
-    padding-bottom: 20px;
 }
 
+header h1 {
+    position: relative;
+    width: fit-content;
+    padding: 5px;
+    padding-right: 5px;
+    padding-left: 25px;
+    background-color: #a7ffffbb;
+    color: #050507c4;
+    left: 0px; 
+    top: 4px;
 
+}
 
 header ul {
     display: flex;
@@ -32,16 +42,20 @@ header ul {
 }
 
 header ul li {
+    position: relative;
     font-size: 20px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
-    border-bottom: 3px solid rgb(6, 134, 240);
+    border-bottom: 3px solid #a7ffffbb;
+    top: -30px;
+    right: 30px;
 }
 
 header ul li a {
     font-size: 25px;
 }
+
 #fancy img {
     width: 100%
 }
@@ -52,13 +66,242 @@ article {
 }
 
 article h1 {
-    padding: 20px;
-    margin: 20px;
-    border-right: 3px solid rgb(46, 138, 41);
+    width: fit-content;
+    padding-right: 15px;
+    margin-left: 400px;
+    margin-top: 20px;
+    border-right: 3px solid #35354dc4;
     text-align: right;
+    color: #35354dc4;
 }
 article p {
     margin-top: 20px;
-    font-size: 200%;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 125%;
 }
 
+main {
+    margin-top: 50px;
+    height: 900px;
+}
+
+main h1 {
+    padding-right: 11px;
+    width: fit-content;
+    height: 850px;
+    margin-left: 412px;
+    margin-top: 20px;
+    border-right: 3px solid #35354dc4;
+    color: #35354dc4;
+}
+
+#projects {
+    position: relative;
+    top: -935px;
+    margin-top: 20px;
+    margin-left: 540px;
+}
+
+#project1 p {
+    position: relative;
+    background-color: #a7ffffbb;
+    width: 125px;
+    top: 350px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #35354dc4;
+}
+
+#project1 h2 {
+    position: relative;
+    background-color: #a7ffffbb;
+    width: 125px;
+    top: 350px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #35354dc4;
+}
+
+#project1 img {
+    border: 4px solid #a7ffffbb;
+}
+
+#otherProjects {
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+    height: 1000px;
+}
+
+#otherProjects figure {
+    margin-right: 12px;
+    flex: 0 0 25%;
+}
+
+#otherProjects img {
+    border: 4px solid #a7ffffbb;
+}
+
+#op1 {
+    position: relative; 
+    top: -75px;
+}
+
+#op2 {
+    position: relative; 
+    top: -75px;
+}
+
+#op3 {
+    position: relative; 
+    top: -150px;
+}
+
+#op4 {
+    position: relative; 
+    top: -150px;
+}
+
+#otherProjects figure h2 {
+    position: relative;
+    background-color: #a7ffffbb;
+    width: 125px;
+    top: 175px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #35354dc4;
+}
+
+#otherProjects figure p {
+    position: relative;
+    background-color: #a7ffffbb;
+    width: 125px;
+    top: 175px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 10px;
+    color: #35354dc4;
+}
+
+footer {
+    margin-top: 100px;
+    color: #35354dc4;
+}
+
+footer h1 {
+    position: relative;
+    width: 150px;
+    text-align: right;
+    padding-right: 15px;
+    margin-left: 364px;
+    margin-top: 20px;
+    border-right: 3px solid #35354dc4;
+    color: #35354dc4;
+}
+
+footer a {
+    color: #35354dc4;
+    font-size: 25px;
+    margin-left: 25px;
+    border-bottom: 4px solid #35354dc4
+}
+
+footer ul {
+    display: flex;
+    height: fit-content;
+    height: 25px;
+    width: fit-content;
+    margin-left: 490px;
+    position: relative;
+    bottom: 50px;
+}
+
+footer ul li {
+    margin-bottom: 100px;
+    margin-left: 20px;
+}
+
+
+
+
+@media screen and (max-width: 1400px) {
+    main {
+        height: 1300px;
+    }
+
+    article h1 {
+        margin-left: 0px;
+    }
+
+    main h1 {
+        margin-left: 8px;
+        height: 1250px;
+    }
+
+    #projects {
+        top: -1335px;
+        margin-left: 132px;
+    }
+
+    #otherProjects figure {
+        flex: 0 0 50%;
+    }
+
+    #op2 {
+        position: relative; 
+        top: -150px;
+    }
+    
+    #op3 {
+        position: relative; 
+        top: -225px;
+    }
+    
+    #op4 {
+        position: relative; 
+        top: -300px;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+
+    footer h1 {
+        font-size: 150%;
+        margin-left: 0px;
+        width: 100px;
+        margin-left: 3px;
+        height: 50px;
+    }
+
+    footer ul {
+        margin-left: 85px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    article h1 {
+        margin-left: 29px;
+        font-size: 12px;
+        width: 69px;
+        padding-right: 13px;
+    }
+    article p {
+        font-size: 12px;
+    }
+    main h1 {
+        font-size: 100%;
+        width: fit-content;
+        padding: 13px;
+    }
+    footer h1 {
+        font-size: 100%;
+        width: fit-content
+    }
+    
+}
