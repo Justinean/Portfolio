@@ -291,12 +291,12 @@ footer ul li {
 @media screen and (max-width: 992px) {
     article h1 {
         margin-left: 29px;
-        font-size: 12px;
+        font-size: 75%;
         width: 69px;
         padding-right: 13px;
     }
     article p {
-        font-size: 12px;
+        font-size: 15px;
     }
     main h1 {
         font-size: 100%;
