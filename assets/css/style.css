@@ -15,6 +15,7 @@ body {
     height: fit-content;
     background-color: #463b4d55;
     min-width: 800px;
+    max-width: 1920px;
 }
 
 header {
@@ -58,7 +59,7 @@ header ul li a {
 }
 
 #fancy img {
-    width: 100%
+    width: 100%;
 }
 article {
     display: flex;
