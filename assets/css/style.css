@@ -61,6 +61,7 @@ header ul li a {
 #fancy img {
     width: 100%;
 }
+
 article {
     display: flex;
     flex-direction: row;
@@ -76,6 +77,7 @@ article h1 {
     text-align: right;
     color: #35354dc4;
 }
+
 article p {
     margin-top: 20px;
     margin-left: 30px;
@@ -106,28 +108,32 @@ main h1 {
 }
 
 #project1 p {
-    position: absolute;
     background-color: #3c5d5dbb;
     width: 125px;
-    top: 27.45%;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-right: 10px;
     color: #88b6e2c4;
-    z-index: 3;
 }
 
 #project1 h2 {
-    position: absolute;
     background-color: #3c5d5dbb;
     width: 125px;
-    top: 25%;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 10px;
     color: #88b6e2c4;
-    z-index: 3;
+}
+
+#project1 #text {
+    position: absolute;
+    top: 25%;
+    z-index: 2;
+}
+
+#project1 #text:hover ~ .layer{
+    z-index: 1;
 }
 
 #project1 img {
@@ -141,7 +147,7 @@ main h1 {
     z-index: 0;
 }
 
-.layer {
+#project1 .layer {
     position: absolute;
     width: 800px;
     height: 400px;
@@ -152,8 +158,8 @@ main h1 {
     z-index: 0;
 }
 
-.layer:hover {
-    z-index: 2;
+#project1 .layer:hover {
+    z-index: 1;
 }
 
 #otherProjects {
@@ -178,6 +184,25 @@ main h1 {
     height: fit-content;
 }
 
+#op1:hover a > .layer {
+    z-index: 1;
+}
+
+#op1 .layer {
+    position: absolute;
+    width: 390px;
+    height: 190px;
+    background-color: cyan;
+    opacity: 25%;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+}
+
+#op1 .layer:hover {
+    z-index: 1;
+}
+
 #op2 {
     position: absolute; 
     top: 496px;
@@ -185,10 +210,48 @@ main h1 {
     height: fit-content;
 }
 
+#op2:hover a > .layer {
+    z-index: 1;
+}
+
+#op2 .layer {
+    position: absolute;
+    width: 390px;
+    height: 190px;
+    background-color: cyan;
+    opacity: 25%;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+}
+
+#op2 .layer:hover {
+    z-index: 1;
+}
+
 #op3 {
     position: absolute; 
     top: 706px;
     height: fit-content;
+}
+
+#op3:hover a > .layer {
+    z-index: 1;
+}
+
+#op3 .layer {
+    position: absolute;
+    width: 390px;
+    height: 190px;
+    background-color: cyan;
+    opacity: 25%;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+}
+
+#op3 .layer:hover {
+    z-index: 1;
 }
 
 #op4 {
@@ -198,11 +261,28 @@ main h1 {
     height: fit-content;
 }
 
-#otherProjects figure h2 {
+#op4:hover a > .layer {
+    z-index: 1;
+}
+
+#op4 .layer {
     position: absolute;
+    width: 390px;
+    height: 190px;
+    background-color: cyan;
+    opacity: 25%;
+    top: 4px;
+    left: 4px;
+    z-index: -1;
+}
+
+#op4 .layer:hover {
+    z-index: 1;
+}
+
+#otherProjects figure h2 {
     background-color: #3c5d5dbb;
     width: 125px;
-    top: 61%;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 10px;
@@ -210,14 +290,18 @@ main h1 {
 }
 
 #otherProjects figure p {
-    position: absolute;
     background-color: #3c5d5dbb;
     width: 125px;
-    top: 78.20%;
     padding-left: 15px;
     padding-right: 10px;
     padding-bottom: 5px;
     color: #88b6e2c4;
+}
+
+#otherProjects figure .text {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
 }
 
 footer {
@@ -322,14 +406,17 @@ footer ul li {
         width: 69px;
         padding-right: 13px;
     }
+
     article p {
-        font-size: 15px;
+        font-size: 12px;
     }
+
     main h1 {
         font-size: 100%;
         width: fit-content;
         padding: 13px;
     }
+
     footer h1 {
         font-size: 100%;
         width: fit-content
