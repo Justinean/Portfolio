@@ -6,4 +6,4 @@ contact me.
 
 !["Screenshot of portfolio"](./assets/images/portfolio.png)
 
-https://slateustv.github.io/Portfolio/
+https://justinean.github.io/Portfolio/
