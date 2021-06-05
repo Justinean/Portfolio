@@ -62,10 +62,17 @@ header ul li a {
     width: 100%;
 }
 
+#me {
+    position: absolute;
+    left: 540px;
+    margin-top: 85px;
+}
+
 article {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 320px;
 }
 
 article h1 {
@@ -109,7 +116,7 @@ main h1 {
 
 #project1 p {
     background-color: #3c5d5dbb;
-    width: 125px;
+    width: 200px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 15px;
@@ -119,7 +126,7 @@ main h1 {
 
 #project1 h2 {
     background-color: #3c5d5dbb;
-    width: 125px;
+    width: 200px;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 10px;
@@ -132,6 +139,30 @@ main h1 {
     z-index: 2;
 }
 
+#project1 > .repo {
+    position: relative;
+    top: -41px;
+    left: 654px;
+}
+
+.repo {
+    display: block;
+    text-align: left;
+    font-size: 25px;
+    background-color: #3c5d5dbb;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 5px;
+    width: 150px;
+    color: #88b6e2c4;
+    z-index: 5;
+}
+
+.repo span {
+    font-size: 75%;
+    font-weight: normal;
+}
+
 #project1 #text:hover ~ .layer{
     z-index: 1;
 }
@@ -139,6 +170,8 @@ main h1 {
 #project1 img {
     position: relative;
     top: 70px;
+    width: 808px;
+    height: 408px;
     border: 4px solid #3c5d5dbb;
     z-index: 1;
 }
@@ -178,10 +211,30 @@ main h1 {
     border: 4px solid #3c5d5dbb;
 }
 
+#otherProjects .repo {
+    line-height: 18px;
+    padding-top: 12px;
+    padding-bottom: 5px;
+}
+
+#otherProjects .repo span{
+    font-size: 60%;
+}
+
+#otherProjects .repo {
+    position: relative;
+    top: -72px;
+    left: 244px;
+}
+
 #op1 {
     position: absolute; 
     top: 496px;
     height: fit-content;
+}
+
+#otherProjects #op1 .text {
+    top: 40%;
 }
 
 #op1:hover a > .layer {
@@ -208,6 +261,10 @@ main h1 {
     top: 496px;
     left: 410px;
     height: fit-content;
+}
+
+#otherProjects #op2 .text {
+    top: 40%;
 }
 
 #op2:hover a > .layer {
@@ -282,7 +339,7 @@ main h1 {
 
 #otherProjects figure h2 {
     background-color: #3c5d5dbb;
-    width: 125px;
+    width: 150px;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 10px;
@@ -291,7 +348,7 @@ main h1 {
 
 #otherProjects figure p {
     background-color: #3c5d5dbb;
-    width: 125px;
+    width: 150px;
     padding-left: 15px;
     padding-right: 10px;
     padding-bottom: 5px;
@@ -351,6 +408,10 @@ footer ul li {
         margin-left: 0px;
     }
 
+    #me {
+        left: 140px;
+    }
+
     main h1 {
         margin-left: 8px;
         height: 1250px;
@@ -367,18 +428,18 @@ footer ul li {
 
     #op2 {
         position: relative; 
-        top: 290px;
+        top: 220px;
         left: 0px;
     }
     
     #op3 {
         position: relative; 
-        top: 160px;
+        top: 90px;
     }
     
     #op4 {
         position: relative; 
-        top: 30px;
+        top: -40px;
         left: 0px;
     }
 
@@ -400,6 +461,11 @@ footer ul li {
 }
 
 @media screen and (max-width: 992px) {
+    #me {
+        left: 110px;
+        margin-top: 50px;
+    }
+
     article h1 {
         margin-left: 23px;
         font-size: 90%;
