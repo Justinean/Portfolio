@@ -139,6 +139,10 @@ main h1 {
     z-index: 2;
 }
 
+#project1 a > #text {
+    top: 23%;
+}
+
 #project1 > .repo {
     position: relative;
     top: -41px;
