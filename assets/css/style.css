@@ -133,7 +133,39 @@ section h1 {
         zoom: 50%;
         height: fit-content;
     }
-    main {
-        height: 0px;
+}
+
+@media screen and (max-width: 540px) {
+    body {
+        zoom: 45%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    body {
+        zoom: 40%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    body {
+        zoom: 35%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    body {
+        zoom: 30%;
+        height: fit-content;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    body {
+        zoom: 25%;
+        height: fit-content;
     }
 }
